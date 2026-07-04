@@ -1,0 +1,421 @@
+/* Laptop view*/
+
+@media (max-width: 1200px) {
+   .header-section{
+    height: auto;
+   }
+   .header-title{
+    font-size: 70px;
+    font-weight: 800;
+   }
+   .header-bar{
+    padding:40px;
+   width:50%;
+    }
+    .section{
+        padding: 20px;
+    }
+    .section-contact{
+        padding: 20px;
+    }
+.section-contact h4{
+    
+    font-size: 30px;
+    font-weight:500;
+}
+.container{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+/* Tablet landscape / small desktop */
+@media (max-width: 992px) {
+    .header-title {
+        font-size: 4.2rem;
+    }
+    .header-bar {
+        width: 45%;
+        padding: 30px;
+    }
+    .main-ma-section {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    /* Allow mobile menu to be shown via JS toggle (JS sets inline display:flex) */
+    .navbar-ul {
+        width: 60%;
+        max-width: 320px;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        padding-top: 80px;
+        display: none; /* JS will flip to flex */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Tablet / large phones */
+@media (max-width: 768px) {
+    .header-section {
+        min-height: auto;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .header-title {
+        font-size: 3.6rem;
+        padding-top: 40px;
+    }
+    .header-bar {
+        width: 70%;
+        padding: 20px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .main-ma-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .se {
+        margin-top: 20px;
+        width: 90%;
+        background-position: center;
+    }
+    .section-contact {
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+    }
+        .section-contact{
+            width: 100%;
+            padding: 0px;
+
+        }
+        .content-front{
+            width: 100%;
+            padding: 0px;
+        }
+        .content-front1 p {
+    margin-bottom: 10px;
+    padding: 20px;
+}.content-front1 h1 {
+    margin-bottom: 40px;
+    padding: 20px;}
+    .content-footer1 h5 {
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.5;
+}.content-foot {
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.content-footer1 h4{
+    padding: 15px;
+    font-size: 22px;
+    border-radius: 40px;
+    width: 60%;
+    text-align: center;
+    margin-top: 50px
+}
+.content-footer1 p {
+    font-size: 23px;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.footer-numbers {
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}.profiles{
+display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width:auto;
+    grid-auto-rows: auto;
+    padding: 0px;}
+    .section-contact h4 { font-size: 22px; margin: 10px; }
+    .section-contact p { font-size: 15px; padding: 10px; margin: 10px; }
+    .services { padding-left: 10px; }
+    .card { width: 100%; padding: 20px; }
+    .card h2 { font-size: 22px; }
+    .card p { font-size: 16px; }
+    .container { grid-template-columns: repeat(2, 1fr); gap: 16px; padding: 20px; }
+    .profiles { grid-template-columns: repeat(3, 1fr); padding: 20px; }
+    .profiles-card h1 { font-size: 18px; }
+    /* Make sure the navbar covers more space on smaller tablets */
+    .navbar-ul { width: 70%; }
+}
+
+/* Small phones */
+@media (max-width: 576px) {
+    .header-title { font-size: 3rem; }
+    .header-bar { width: 90%; padding: 16px; }
+    .container { grid-template-columns: 1fr; padding: 12px; }
+    .profiles { grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 16px; }
+    .profiles-card .card-image img { height: 160px; width: 160px; }
+    .main-footer-section .content-footer { flex-direction: column; }
+    .content-footer1, .content-footer2 { width: 100%; }
+    /* Mobile nav: ensure the menu is vertically stacked and clearly visible */
+    .navbar-ul {
+        background-color: rgba(0,0,0,0.95);
+        align-items: center;
+        gap: 20px;
+    }
+    .navbar-li { margin: 24px 0; }
+}
+
+/* Extra small phones */
+@media (max-width: 425px) {
+    .header-section { width:100%; height:auto; background-position:center; background-size:cover; }
+    .header-title { font-size: 2.6rem; }
+    .header-para { font-size: 16px; line-height: 1.4; }
+    .menu-icon { font-size: 22px; margin-left: 20px; }
+    .card { padding: 18px; }
+    .icon { width: 110px; height: 110px; }
+    /* Layout adjustments */
+    .container { padding: 12px; }
+    .container .co { background-position: center; }
+    .profiles { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .profiles-card { text-align: center; }
+    .profiles-card .card-image img { max-width: 100%; height: auto; }
+    /* Navbar as full-height overlay for small screens */
+    .navbar-ul {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 85%;
+        max-width: 360px;
+        transform: translateX(-100%);
+        transition: transform 0.28s ease;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background-color: rgba(0,0,0,0.96);
+        z-index: 9999;
+    }
+    /* Helper class to reveal the mobile menu if you prefer class toggling */
+    .navbar-ul.show { transform: translateX(0); }
+    .navbar-li { width: 100%; }
+    .navbar-li a { display: inline-block; width: 100%; padding: 16px 0; }
+}
+
+/* Strong overrides to prevent overlap and ensure sections flow on small screens */
+@media (max-width: 768px) {
+    /* Remove any fixed viewport heights coming from main stylesheet */
+    .header-section, .background-section, .footer-number, .footer-background, .main-ma-section {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+    /* Ensure header content flows vertically */
+
+   
+}
+
+/* When the JS toggles inline `style="display:flex"`, show the off-canvas menu by removing transform */
+/* Support both 'display:flex' and 'display: flex' in the style attribute */
+@media (max-width: 425px) {
+    .navbar-ul[style*="display:flex"],
+    .navbar-ul[style*="display: flex"] {
+        transform: translateX(0) !important;
+        left: 0 !important;
+        display: flex !important;
+        visibility: visible !important;
+    }
+}
+
+/* Additional small-screen polish: reduce large paddings and fixed sizes that cause overflow */
+@media (max-width: 425px) {
+    .section, .services, .container, .profiles { padding: 12px !important; }
+    .main-ma-section { padding-bottom: 20px !important; }
+    .header-title { margin-top: 10px; }
+    .footer-numbers, .footer-number-text { padding: 12px !important; }
+    .copyright { padding: 12px 8px !important; }
+}
+
+@media (max-width: 375px) {
+    .header-title { font-size: 2.4rem; }
+    .profiles { grid-template-columns: 1fr; }
+    .profiles-card .card-image img { height: 140px; width: 140px; }
+}
+
+/* Very small phones (320px) */
+@media (max-width: 320px) {
+    .header-title { font-size: 2.05rem; }
+    .header-bar { padding: 10px; width: 95%; }
+    .header-para { font-size: 13px; line-height: 1.35; }
+    .menu-icon { font-size: 20px; margin-left: 12px; }
+    .navbar-ul { max-width: 280px; width: 90%; }
+    .card { padding: 12px; }
+    .icon { width: 100px; height: 100px; }
+    .container { padding: 8px; }
+    .profiles-card .card-image img { height: 120px; width: 120px; }
+    /* Ensure images scale down */
+    img { max-width: 100%; height: auto; }
+    .footer-number { height: auto; padding: 30px 12px; }
+    .footer-numbers { flex-direction: column; gap: 12px; padding: 12px; }
+}
+
+/* Small accessibility tweak: make contact form inputs full width on small screens */
+@media (max-width: 768px) {
+    .contact-form form { width: 100%; }
+    .contact-form input { font-size: 18px; }
+}
+
+/* Section-specific tweaks for very small screens (425px) */
+@media (max-width: 425px) {
+    /* Header */
+    .header-bar { width: 95%; padding: 14px; }
+    .header-title { font-size: 2.4rem; line-height: 1.05; }
+    .header-para { font-size: 15px; padding-top: 10px; }
+
+    /* Navigation */
+    .menu-icon { position: fixed; top: 16px; right: 16px; margin-left: 0; z-index: 10001; }
+    .navbar-ul { padding-top: 110px; }
+    .navbar-li a { font-size: 18px; padding: 12px 20px; }
+
+    /* Main services blocks */
+    .main-ma-section .ma-section1,
+    .main-ma-section .ma-section2,
+    .main-ma-section .ma-section3 {
+        width: 92%;
+        margin: 10px 0;
+    }
+    .ma-section1 img, .image-section2 img, .image-section3 img { width: 90px; height: 90px; }
+
+    /* Cards & grids */
+    .services { padding: 20px; }
+    .card { width: 100%; padding: 16px; }
+    .container { grid-template-columns: 1fr; grid-auto-rows: 200px; padding: 12px; }
+
+    /* Background / marketing */
+    .background-section { height: auto; padding: 40px 12px; background-position: center; }
+    .content-front { flex-direction: column; gap: 24px; padding: 20px; }
+
+    /* Profiles */
+    .profiles { grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 16px; }
+    .profiles-card { text-align: center; }
+
+    /* Footer & contact */
+    .footer-background { flex-direction: column; padding: 20px; height: auto; }
+    .contact-us, .contact-form { width: 100%; padding: 12px; }
+    .contact-form input { font-size: 16px; }
+    /* Ensure other large sections don't force viewport height */
+    .footer-number { height: auto; padding: 20px 12px; }
+    .background-section { height: auto; padding-bottom: 30px; }
+    .main-ma-section { height: auto; }
+}
+
+/* Very small phones (320px) */
+@media (max-width: 320px) {
+
+    
+        .menu-icon {
+        font-size: 20px;
+        top: 14px;
+        right: 15px;}
+            .header-bar {
+        padding: 0%;
+        width: 100%;
+    }
+        .content-front {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0px;
+    }
+    .header-link{
+            margin-top: 123px;
+    font-size: 12px;
+    color: white;
+    line-height: 1.8;
+    margin-bottom: -33px;
+    padding: 10px;
+    }
+    .header-title { font-size: 1.95rem; }
+    .header-para { font-size: 13px; line-height: 1.35;padding: 20px; }
+    .header-title {
+        font-size: 1.95rem;
+        padding: 20px;
+        margin: 0px;
+    }
+    .header-btn{
+        padding: 11px 31px 11px 32px;
+    color: white;
+    font-size: 11px;
+    border-radius: 50px;
+    margin-top: 30px;
+    border: none;
+    }
+    .content-footer1 {
+    color: white;
+    padding: 9px;}
+        .footer-number {
+        height: auto;
+        padding: 0px;
+    }
+    .navbar-li a { font-size: 16px; padding: 10px 16px; }
+    .main-ma-section .ma-section1, .main-ma-section .ma-section2, .main-ma-section .ma-section3 {
+        width: 87%;
+        margin: 8px 0;
+    }
+   .background-section {
+        height: auto;
+        padding: 19px 0px;
+        background-position: center;
+    } 
+    .section-contact h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;}
+    .profiles { grid-template-columns: 1fr; }
+    .container { grid-auto-rows: 180px; }
+    .card p { font-size: 15px;}
+    .contact-form input { font-size: 15px; }
+    img { max-width: 100%; height: auto; }
+
+        .footer-background {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+        font-size: 13px;width: 100%;
+    }
+        section-contact p {
+        font-size: 7px;
+        padding: 9px;
+        margin: 0px;
+       
+        margin: 10px;}
+
+        .contact-us, .contact-form {
+        width: 100%;
+        padding: 0px;
+       
+    }
+    .contact-form {
+        margin-top: 40px;
+     } 
+    
+        .footer-background {
+        flex-direction: column;
+        padding: -1px;
+        height: auto;
+    }
+    .footer-numbers { flex-direction: column; gap: 12px; padding: 12px; }
+}
+
+/* End responsive rules */
